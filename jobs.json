@@ -1,0 +1,50 @@
+[
+  {
+    "id" : "dci",
+    "from" : "2020/03/23",
+    "to" : "current",
+    "position" : "Lecturer Web Development",
+    "company" : "Digital Career Institute gGmbH",
+    "desc" : "Lehrer im Jahreskurs für Webdevelopment und in Orientierungskursen",
+    "contents" : [
+      "Unterricht in Deutscher und Englischer Sprache",
+      "Digitale Alphabetisierung (Umgang mit Linux-Betriebssystemen, Packagemanagern und GIT)",
+      "User Interface Basics (UX/UI, HTML, CSS, Responsivity, Interaction)",
+      "Programming Basics (JavaScript im Browser und Node.js)",
+      "Single Page Applications (React)",
+      "Backend (Express, MongoDB)"
+    ],
+    "tech" : []
+  },
+  {
+    "id" : "hhl-pqm",
+    "from" : "2018/02/01",
+    "to" : "2020/02/19",
+    "position" : "Process Quality Manager",
+    "company" : "HHL Leipzig Graduate School of Management",
+    "desc" : "Verantwortlicher für Evaluation, Optmierung und Weiterentwicklung von Verwaltungsabläufen",
+    "contents" : [
+      "ganzheitliche Betreuung des zentralen Campus Management Systems",
+      "Leitung eines Softwareeinführungsprojekts, u.a. Anforderungsmanagement, Markterforschung, Vergleich und Auswahl",
+      "Kontinuierliche Analyse, Optimierung und Weiterentwicklung von Abteilungsprozessen",
+      "Datenauswertungen über Reporting mit SAP Crystal Reports",
+      "Betreuung studentischer Hilfskräfte für Projektaufgaben",
+      "Repräsentation der HHL in den Zentren für Kommunikation und Informationstechnik (zki)"
+    ],
+    "tech" : []
+  } ,
+  {
+    "id" : "hhl-ocm",
+    "from" : "2014/06/01",
+    "to" : "2018/02/01",
+    "position" : "Officer Campusmanagement",
+    "company" : "HHL Leipzig Graduate School of Management",
+    "desc" : "Verantwortlich für die Betreuung, Unterstützung und Weiterentwicklung des zentralen Campusmanagement Systems",
+    "contents" : [
+      "ganzheitliche Betreuung des zentralen Campus Management Systems",
+      "Datenauswertungen über Reporting mit SAP Crystal Reports",
+      "Repräsentation der HHL in den Zentren für Kommunikation und Informationstechnik (zki)"
+    ],
+    "tech" : []
+  }
+]

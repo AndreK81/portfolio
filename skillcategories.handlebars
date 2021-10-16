@@ -1,0 +1,9 @@
+{{#each this}}
+  <fieldset id="{{id}}">
+    <legend>{{name}}</legend>
+		{{#each skills}}
+		<input id="{{id}}" type="number" min="1" max="5" value="{{value}}">
+		<label for="{{id}}" title="{{desc}}">{{name}}</label>
+		{{/each}}
+ </fieldset>
+{{/each}}

@@ -1,0 +1,158 @@
+[
+  {
+    "skills": [
+      {
+        "id": "javascript",
+        "value": "5",
+        "name": "JavaScript",
+        "desc": null
+      },
+      {
+        "id": "sass",
+        "value": "4",
+        "name": "SASS",
+        "desc": "Syntactally Awesome CSS"
+      },
+      {
+        "id": "php",
+        "value": "3",
+        "name": "PHP",
+        "desc": "PHP Hypertext Preprocessor"
+      },
+      {
+        "id": "java",
+        "value": "3",
+        "name": "Java",
+        "desc": "Java"
+      },
+      {
+        "id": "typescript",
+        "value": "2",
+        "name": "TypeScript",
+        "desc": null
+      }
+    ],
+    "id": "programming",
+    "name": "Programmierung"
+  },
+  {
+    "skills": [
+      {
+        "id": "mysql",
+        "value": "5",
+        "name": "MySQL",
+        "desc": "MySQL oder MariaDB"
+      },
+      {
+        "id": "mssql",
+        "value": "4",
+        "name": "Microsoft SQL",
+        "desc": "Microsoft SQL"
+      },
+      {
+        "id": "mongodb",
+        "value": "3",
+        "name": "MongoDB",
+        "desc": null
+      },
+      {
+        "id": "postgres",
+        "value": "3",
+        "name": "Postgres SQL",
+        "desc": "Postgres SQL"
+      }
+    ],
+    "id": "databases",
+    "name": "Datenbanken"
+  },
+  {
+    "skills": [
+      {
+        "id": "itil",
+        "value": "3",
+        "name": "ITIL",
+        "desc": "IT Information Library"
+      },
+      {
+        "id": "ux",
+        "value": "3",
+        "name": "User Experience",
+        "desc": "Figma, Prototyping, Screendesign"
+      }
+    ],
+    "id": "requirementsengineering",
+    "name": "Anforderungsmanagement"
+  },
+  {
+    "skills": [
+      {
+        "id": "digital",
+        "value": "4",
+        "name": "Digiale Kunst",
+        "desc": "Gimp, Inkscape, Blender, Krita, Clip-Studio-Paint,Acesprite"
+      },
+      {
+        "id": "acryl",
+        "value": "3",
+        "name": "Acryl auf Leinwand",
+        "desc": "Malerei mit Acrylfarben auf Leinwand"
+      },
+      {
+        "id": "watercolor",
+        "value": "2",
+        "name": "Aquarell",
+        "desc": "Malerei mit Aquarell auf Spezialpapier"
+      }
+    ],
+    "id": "design",
+    "name": "Designskills"
+  },
+  {
+    "skills": [
+      {
+        "id": "german",
+        "value": "5",
+        "name": "Deutsch (Muttersprache)",
+        "desc": null
+      },
+      {
+        "id": "english",
+        "value": "5",
+        "name": "Englisch (verhandlungssicher)",
+        "desc": null
+      }
+    ],
+    "id": "languages",
+    "name": "Sprachen"
+  },
+  {
+    "skills": [
+      {
+        "id": "didactics",
+        "value": "5",
+        "name": "Didaktik",
+        "desc": null
+      },
+      {
+        "id": "presentation",
+        "value": "4",
+        "name": "Präsentation",
+        "desc": null
+      },
+      {
+        "id": "negotiation",
+        "value": "3",
+        "name": "Verhandlung (Harvard)",
+        "desc": null
+      },
+      {
+        "id": "copyright",
+        "value": "3",
+        "name": "Texte verfassen",
+        "desc": null
+      }
+    ],
+    "id": "softskills",
+    "name": "Softskills"
+  }
+]

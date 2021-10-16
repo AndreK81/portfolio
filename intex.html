@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Du liest das Portfolio von André Kleinschmidt">
+  <title>André Kleinschmidt - Portfolio</title>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <link rel="stylesheet" href="./dist/styles/portfolio.css">
+</head>
+
+<body id="top">
+  <header>
+    <h1>Sciencebear.info</h1>
+    <aside>Willkommen auf Andrés Portfolio. Dozent mit über 15 Jahren IT-Erfahrung als Softwareentwickler, Systembetreuer und Prozess-Manager.</aside>
+    <nav id="mainnav">
+      <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cv">Lebenslauf</a></li>
+        <li><a href="#privat">Privat</a></li>
+        <li><a href="#more">Mehr</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="home">
+      <h2>Hallo, ich bin André</h2>
+      <figure id="intro">
+        <img src="./assets/andre.jpg" alt="Foto von André">
+        <figcaption>Foto von André im Spreewald</figcaption>
+      </figure>
+      <p id="who-are-you">und wer bist Du?</p>
+      <nav>
+        <a href="#skills">Recruity</a>
+        <a href="#more">Schülery / Studenty</a>
+        <a href="#cv">Freundy</a>
+        <a href="#more">zufällig hier</a>
+      </nav>
+      <figure id="avatar">
+        <img src="https://i.pravatar.cc/500" alt="Du">
+        <figcaption>Zufalls-Avatar</figcaption>
+      </figure>
+    </section>
+    <section id="skills">
+      <h2>Skills und Kenntnisse</h2>
+      <p>Dieser Bereich ist für Recrutys gedacht.<br>Die Einschätzungen sind natürlich subjektiv.<br> Für ein paar davon
+        gibt es aber Belege im <a href="#cv">Lebenslauf</a></p>
+      <form id="skillform">
+        <button type="button" id="toJSON">to JSON</button>
+      </form>
+    </section>
+    <section id="cv">
+      <header>
+        <h2>Lebenslauf</h2>
+        <p>Du willst wissen, was ich in meinem Leben bisher angestellt habe? Bitte, hier kommen meine beruflichen
+          Lebensstationen</p>
+      </header>
+      <main id="jobs"></main>
+    </section>
+    <section id="privat">
+      <h2>André privat</h2>
+      <p>Du hast auf Sonstiges Geklickt! Du willst wissen womit ich mein privates Leben verbringe?</p>
+    </section>
+    <section id="more">
+      <h2>Was es sonst noch gibt</h2>
+      <p>Unentschlossen. Warum nicht. Hier kannst du dich austoben und zu weiteren Seiten fliegen.</p>
+    </section>
+    <section>
+      <h2>Impressum</h2>
+      <p>Die Textur in der Home Sektion stammt von <a href="www.textures4photoshop.com">www.textures4photoshop.com</a>
+      </p>
+    </section>
+
+    <a href="#top" id="to-top" title="zurück nach Oben">⬆️ zurück </a>
+  </main>
+  <footer>&copy; <time datetime="" id="copy">2021</time> - André Kleinschmidt</footer>
+  <script defer src="portfolio.js"></script>
+</body>
+
+</html>

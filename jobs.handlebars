@@ -1,0 +1,11 @@
+{{#each this}}
+  <article id="{{id}}">
+    <h3>{{position}} bei {{company}}</h3>
+		<p>{{desc}}</p>
+		<ul class="contents">
+		{{#each contents}}
+			<li>{{this}}</li>
+		{{/each}}
+		</ul>
+ 	</article>
+{{/each}}
