@@ -276,7 +276,7 @@ section#home nav {
           flex-direction: column;
   gap: 0.5rem;
   margin: 0.5rem;
-  padding: 0.5rem;
+  padding: 0.25rem 0;
   background-color: #f6c49c;
   color: #f6c49c;
   font-weight: bold;
@@ -307,18 +307,15 @@ section#home nav a:visited {
   text-align: center;
   border: 1px solid currentColor;
   border-radius: 0.5rem;
-  margin: 0.125rem 0;
+  margin: 0.25rem 0.5rem;
   padding: 0.25rem;
 }
 
 section#home nav a:hover, section#home nav a:focus {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-section#home nav:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  margin: 0rem 0.25rem;
+  padding: 0.5rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
 }
 
 section#home nav:hover a {
