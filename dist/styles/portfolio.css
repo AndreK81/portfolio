@@ -28,18 +28,29 @@ figcaption {
   font-family: sans-serif;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0.5rem auto;
+}
+
 body > header {
-  background-color: #264653;
-  -webkit-box-shadow: 0 0.25rem 0.125rem #264653;
-          box-shadow: 0 0.25rem 0.125rem #264653;
+  background-color: #0e1977;
+  -webkit-box-shadow: 0 0.25rem 0.125rem #0e1977;
+          box-shadow: 0 0.25rem 0.125rem #0e1977;
   z-index: 100;
-  border-bottom: 0.125rem solid #264653;
+  border-bottom: 0.125rem solid #0e1977;
 }
 
 body > header > h1 {
   font-size: 2.5rem;
   padding: 0.5rem;
-  color: #2a9d8f;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  color: #5c83ee;
   text-align: center;
   text-shadow: 1px 1px black, -1px 1px black, 1px -1px black, -1px -1px black;
   -webkit-animation: wobble 2s ease-in-out infinite alternate;
@@ -71,7 +82,7 @@ body > header > h1 {
 body > header aside {
   padding: 0.25rem 0.5rem;
   margin-bottom: 1rem;
-  color: #2a9d8f;
+  color: #5c83ee;
   font-family: sans-serif;
   text-align: center;
   font-weight: bold;
@@ -116,7 +127,7 @@ section#home {
   min-height: 75vmin;
   max-height: 100vmax;
   /*  height: clamp(50vmin, min-content, 100vmax); */
-  background-color: #be3918;
+  background-color: #e9c46a;
   background-image: url(../../assets/fur-texture-seamless-free.jpg);
   background-blend-mode: multiply;
   display: -ms-grid;
@@ -163,9 +174,9 @@ section#home figure#intro img {
      object-position: left top;
   border-radius: 50%;
   overflow: hidden;
-  border: 0.25rem solid #2a9d8f;
-  -webkit-box-shadow: 0 0 1rem 0.25rem rgba(42, 157, 143, 0.75);
-          box-shadow: 0 0 1rem 0.25rem rgba(42, 157, 143, 0.75);
+  border: 0.25rem solid #5c83ee;
+  -webkit-box-shadow: 0 0 1rem 0.25rem rgba(92, 131, 238, 0.75);
+          box-shadow: 0 0 1rem 0.25rem rgba(92, 131, 238, 0.75);
 }
 
 section#home figure#intro figcaption {
@@ -174,7 +185,7 @@ section#home figure#intro figcaption {
   position: absolute;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px #264653, -1px -1px #264653;
+  text-shadow: 1px 1px #0e1977, -1px -1px #0e1977;
 }
 
 section#home h2 {
@@ -199,8 +210,8 @@ section#home h2 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.25rem;
-  color: #264653;
-  background-color: #2a9d8f;
+  color: #0e1977;
+  background-color: #5c83ee;
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.75rem 0.75rem 0.75rem 0;
@@ -215,7 +226,7 @@ section#home h2::before {
   position: absolute;
   left: -1em;
   bottom: 0;
-  background-color: #2a9d8f;
+  background-color: #5c83ee;
   -webkit-clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 100%, 100% 0%, 100% 100%);
 }
@@ -239,8 +250,8 @@ section#home p#who-are-you {
           align-items: center;
   margin: 0.5rem;
   font-family: sans-serif;
-  background-color: #2a9d8f;
-  color: #264653;
+  background-color: #5c83ee;
+  color: #0e1977;
   border-radius: 0 0.75rem 0.75rem 0.75rem;
   padding: 0.5rem;
   -webkit-box-shadow: 0.25rem 0.25rem 0.125rem currentColor;
@@ -254,7 +265,7 @@ section#home p#who-are-you::before {
   position: absolute;
   left: -1em;
   top: 0;
-  background-color: #2a9d8f;
+  background-color: #5c83ee;
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
@@ -311,7 +322,8 @@ section#home nav a:visited {
   padding: 0.25rem;
 }
 
-section#home nav a:hover, section#home nav a:focus {
+section#home nav a:hover,
+section#home nav a:focus {
   margin: 0rem 0.25rem;
   padding: 0.5rem;
   -webkit-transition: all 250ms;
@@ -353,7 +365,29 @@ section#home figure#avatar figcaption {
 }
 
 section#skills {
-  padding: 0.5rem;
+  padding: 1.5rem;
+  background-color: #f6c49c;
+  color: #be3918;
+}
+
+section#skills h2 {
+  background-color: #5c83ee;
+  color: #0e1977;
+  padding: 0.25rem 0.5rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+          box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+
+section#skills p {
+  margin-left: 0.5rem;
+  font-family: sans-serif;
+}
+
+section#skills > * {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 section#skills form#skillform fieldset {
@@ -364,9 +398,91 @@ section#skills form#skillform fieldset {
   -ms-grid-rows: auto;
       grid-template-rows: auto;
   grid-auto-rows: auto;
+  gap: 1rem;
+  -webkit-margin-before: 1rem;
+          margin-block-start: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
   line-height: 1.5rem;
   font-size: 1.5rem;
+  font-family: sans-serif;
   border: none;
+}
+
+section#skills form#skillform fieldset legend {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  background-color: #5c83ee;
+  color: #0e1977;
+  padding: 0.25rem 0.5rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+          box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+  font-family: sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+section#skills form#skillform fieldset input {
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+section#skills form#skillform fieldset input[value="1"] + label::after {
+  content: "⭐";
+}
+
+section#skills form#skillform fieldset input[value="2"] + label::after {
+  content: "⭐⭐";
+}
+
+section#skills form#skillform fieldset input[value="3"] + label::after {
+  content: "⭐⭐⭐";
+}
+
+section#skills form#skillform fieldset input[value="4"] + label::after {
+  content: "⭐⭐⭐⭐";
+}
+
+section#skills form#skillform fieldset input[value="5"] + label::after {
+  content: "⭐⭐⭐⭐⭐";
+}
+
+section#skills form#skillform label {
+  margin-left: 0.5rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  position: relative;
+  font-weight: bold;
+  width: calc(100% - (5 * 1.5rem) - 0.5rem);
+}
+
+section#skills form#skillform label::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: calc(-5 * 1.5em);
+  top: calc(50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: right;
+  margin-left: 1rem;
+  width: calc(5 * 1.5em);
+  background-color: #5c83ee;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+          box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
 }
 
 @media screen and (min-width: 768px) {
@@ -383,6 +499,7 @@ section#skills form#skillform fieldset {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
+    gap: 1rem;
   }
 }
 
@@ -393,74 +510,62 @@ section#skills form#skillform fieldset {
   }
 }
 
-section#skills fieldset legend {
-  font-family: sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 1;
-  grid-row: 1 / 2;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1/3;
-}
-
-section#skills > * {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-}
-
-section#skills input {
-  display: inline-block;
-  width: 0;
-  opacity: 0;
-}
-
-section#skills label {
-  font-size: 1rem;
-  line-height: 2rem;
-  position: relative;
-}
-
-section#skills label::after {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  right: 0;
-  text-align: right;
-  margin-left: 1rem;
-  width: calc(5 * 1.5em);
-  background-color: transparent;
-  border: 1px solid lightslategrey;
-  border-radius: 0.5rem;
-}
-
-section#skills *[value="1"] + label::after {
-  content: "⭐";
-}
-
-section#skills *[value="2"] + label::after {
-  content: "⭐⭐";
-}
-
-section#skills *[value="3"] + label::after {
-  content: "⭐⭐⭐";
-}
-
-section#skills *[value="4"] + label::after {
-  content: "⭐⭐⭐⭐";
-}
-
-section#skills *[value="5"] + label::after {
-  content: "⭐⭐⭐⭐⭐";
-}
-
 section#cv {
-  padding: 0.5rem;
+  background-color: #5c83ee;
+  color: #0e1977;
+  padding: 1.5rem;
 }
 
-section#cv #jobs ul.contents {
-  padding-left: 2rem;
+section#cv h2 {
+  background-color: #f6c49c;
+  color: #be3918;
+  padding: 0.25rem 0.5rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #be3918;
+          box-shadow: 0.25rem 0.25rem 0.25rem #be3918;
+}
+
+section#cv p {
+  font-family: sans-serif;
+  margin-left: 0.5rem;
+}
+
+section#cv #jobs h3 {
+  padding: 0.25rem 0.5rem;
+}
+
+section#cv #jobs article h3 {
+  background-color: #f6c49c;
+  color: #be3918;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #be3918;
+          box-shadow: 0.25rem 0.25rem 0.25rem #be3918;
+}
+
+section#cv #jobs article p {
+  font-family: sans-serif;
+  padding: 0.5rem 0.25rem;
+}
+
+section#cv #jobs article ul.contents {
+  margin-left: 0.5rem;
+  list-style: none;
+}
+
+section#cv #jobs article ul.contents li {
+  background-color: #b8c9f8;
+  margin: 0.5rem 0;
+  padding: 0.25rem;
+  -webkit-box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+          box-shadow: 0.25rem 0.25rem 0.25rem #0e1977;
+}
+
+@media screen and (min-width: 450px) {
+  #jobs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
 }
 
 a#to-top {
